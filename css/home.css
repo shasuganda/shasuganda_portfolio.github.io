@@ -7,75 +7,70 @@
     font-size: 18px;
     font-family: "Open Sans", "regular";
 }
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #555656;
+    /*font-family: 'Roboto', sans-serif;*/
+       color: #555656;
 }
-
-.black-bg{
-    opacity: 0.8;
-}
-.vertical-line-container{
-    width: auto;
-    z-index: 99;
-    position: absolute;
-}
-.vertical-line {
-    margin-right: 11.35em;
-    height: auto;
-    display: inline-block;
-    border-right: 1px solid lightgray;
-    min-height: 195vh;
-}
-
-.contact-line{
-    min-height: 160vh !important;
-}
-
-.contact-line-container{
-    z-index: 99;
-}
-
-#first-line{
-    /*margin: 0em 11em 0em 1.5em;*/
-    margin-left:1.5em !important;
-}
-
-#last-line{
-    /*margin: 0vh 4vh 0vh 0vh;*/
-    margin-right : 1.5em !important;
-}
-a {
-    text-decoration: none;
-    color: #fff;
-}
-li {
-    list-style: none;
-}
-.home {
+main{ margin: 0 auto;  }
+.inner-padding{ padding: 0% 3%; }
+a { text-decoration: none !important;}
+.bg-black{
     background: #000000;
     color: #fff;
 }
-#home, #about, #works, #contact {
-    min-height: 100vh;
-}
-#home .home-inner, #about .about-inner, #works .works-inner, #contact .contact-inner {
-    min-height: 100vh;
+.greetings {
+    font-size: 138px;
+    color: #555656;
+    font-weight: 900;
     position: relative;
-    z-index: 999;
-}
-.home-inner, .works-inner, .contact-inner {
-    padding: 0 30px;
+    left: -32px;
+    font-family: 'Black Han Sans', "regular";
+    opacity: 0.5;
 }
 
+#top-menu{ background: #000000; }
+#about{ background: #000000; }
+#about-section{ background: #000000; float: left; padding: 8% 3% 5%; }
+#about-2{ float: left; padding: 8% 3% 5%; }
+#logo{ opacity: 0.8; }
+#work{padding: 0% 3%; float: left;}
+#get-touch{
+    opacity: 0.4;
+    float: left;
+    width: 100%;
+}
+
+/*BEGAN HEADER*/
 .header {
-    padding: 32px 0 0 0;
+    padding: 3% 3%;
+    width: auto;
+    margin: 0 auto;
 }
 .header nav {
     display: flex;
+}
+.header nav a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    color: #555656;
+    font-family: "Open Sans" , "regular";
+}
+#top-menu nav a, #about nav a{
+    color: #FFFFFF;
+ }
+#top-menu nav a:hover, #about nav a:hover {
+    color: #FF1A1A;
+}
+.header nav a:hover {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    color: #FF1A1A;
+    font-family: "Open Sans" , "regular";
 }
 .header nav ul {
     flex-grow: 1;
@@ -86,38 +81,31 @@ li {
     display: inline-block;
     padding-left: 57px;
 }
-.header nav a {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 16px;
-    color: #fff;
-    font-family: "Open Sans" , "regular";
+.active-nav > .nav-red-line{
+    width: auto;
+    height: 0px;
+    border-bottom: 13px solid #ff1a1a;
+    margin: -10px -7px 0px;
+    opacity: 1;
+/*        position: relative;*/
 }
-
-.header .logo {
-    text-align: center;
-    padding: 30px 0;
-    opacity: 0.8;
-}
-.header .logo img {
-    max-width: 291px;
-}
-.greetings {
-    font-size: 138px;
-    padding-bottom: 40px;
-    color: #555656;
-    font-weight: 900;
+.about-details > .nav-red-line{
+    width: auto;
+    height: 6px;
+    border-bottom: 7px solid #ff1a1a;
+    margin: -13px -8px 7px;
+    opacity: .7;
     position: relative;
-    left: -48px;
-    font-family: 'Black Han Sans', "regular";
-    opacity: 0.5;
 }
+/*END HEADER*/
+
+/*BEGAN SHORT ABOUT*/
 .short-about-me {
     width: 52%;
     margin-left: 33.3333%;
     margin-right: 16.6666%;
     padding-bottom: 70px;
+    opacity: 0.8;
 }
 .short-about-me p {
     line-height: 24px;
@@ -135,54 +123,50 @@ li {
     content: "\2022";
     color: #FF1A1A;
     font-weight: 900;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
 }
+/*END SHORT ABOUT*/
 
-/*.active-nav {*/
-    /*border-bottom: 9px solid #ff1a1a;*/
-/*}*/
-
-.name-red-line {
-    width: 158px;
-    height: 0px;
-    border-bottom: 13px solid #ff1a1a;
-    margin: -11px -8px 7px;
-    /*opacity: .7;*/
+/*BEGAN WORK LIST*/
+.works-lists{
+    width: 66%;
 }
-
-.active-nav > .nav-red-line{
+.list-inner{
     width: auto;
-    height: 0px;
-    border-bottom: 13px solid #ff1a1a;
-    margin: -10px -7px 0px;
-    opacity: 1;
-/*    position: relative;*/
 }
-
-/*works */
-.works-inner .header nav a {
+.round-shape-inner {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff1a1a;
+    margin: 4% 4% 62% 0%;
+    float: left;
+}
+.list-details h3 {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: -8px;
     color: #555656;
+    line-height: 56px;
 }
+.list-details p {color: #555656; font-family: "Roboto", "regular"; }
+.list-inner-right {
+    padding-top: 3.2em;
+    float: left;
+    width: 40%;
+}
+.list-inner-left{
+    float: left;
+    width: 60%;
+}
+.list-inner-left img {
+    max-width: 100%;
+}
+/*END WORK LIST*/
 
-.header nav a:hover {
-    color: #FF1A1A;
-}
-
-.works-details {
-    display: flex;
-    padding-top: 70px;
-}
-.section-title {
-    font-size: 144px;
-    font-family: 'Black Han Sans', "regular";
-    color: #555656;
-    font-weight: 900;
-    position: relative;
-    left: -54px;
-    flex-basis: 30%;
-}
-
+/*BEGAN BIGGER TITLES*/
 .work-title {
     font-size: 138px;
     font-family: 'Black Han Sans', "regular";
@@ -190,325 +174,161 @@ li {
     font-weight: 900;
     position: relative;
     left: -68px;
-    flex-basis: 30%;
-    padding-top: 125px;
+    width: 34%;
     opacity: 0.4;
+    float: left;
+    margin-top: 8%;
 }
+.about-title {
+    font-size: 138px;
+    font-family: 'Black Han Sans', "regular";
+    color: #555656;
+    font-weight: 900;
+    position: relative;
+    left: -70px;
+    width: 50%;
+    float: left;
+}
+/*END BIGGER TITLES*/
 
-.resume-red-line{
-    width: 49px;
-    height: 63px;
-    border-bottom: 12px solid #ff1a1a;
-    position: absolute;
-    margin: -5px 535px;
+/*BEGAN BIGGER HEADING*/
+.case-title {
+    justify-content: space-between;
+    float: left;
+    width: 100%;
 }
+.section-title {
+    font-size: 96px;
+    font-family: 'Black Han Sans', "regular";
+    color: #555656;
+    font-weight: 900;
+    position: relative;
+    left: -0.25em;
+    flex-basis: 30%;
+    z-index: 9;
+}
+.red-dot{
+    height: 15px;
+    width: 15px;
+    background-color: #FF1A1A;
+    border-radius: 50%;
+    display: inline-block;
+}
+.case-red-line{
+    width: 621px;
+    height: 26px;
+    border-bottom: 35px solid #ff1a1a;
+    margin: -58px -31px 0px;
+    opacity: .8;
+}
+/*END BIGGER HEADING*/
 
-.works-lists {
-    flex-grow:1;
-    margin: 0px 0px 0px -50px;
+/*BEGAN ABOUT SECTION*/
+.about-details {
+    width: 50%;
+    color: #fff;
+    text-align: justify;
+    float: left;
+    opacity: 0.8;
 }
-.list-inner {
-    display: flex;
-    padding-bottom: 50px;
-}
-.list-inner-left img {
-    max-width: 567px;
-}
-.list-inner-right {
-    display: flex;
-    padding-top: 70px;
-}
-.round-shape-inner {
+.about-details > .round-shape-inner {
     width: 14px;
     height: 14px;
     border-radius: 50%;
     background: #ff1a1a;
-    margin: 16px 4px;
-}
-
-.list-details h3 {
-    font-weight: 800;
-    font-size: 45px;
-    margin-bottom: 20px;
-    margin-top: -8px;
-}
-
-
-/* about */
-.about {
-    background: #000000;
-    z-index: 999;
-    position: relative;
-}
-.about-inner header {
-    padding: 0 30px;
-    padding-top: 32px;
-}
-.about .section-title {
-    margin-bottom: -400px;
-    margin-top: 100px;
-    left: -18px;
-    width:50%;
-    padding-top: 47px;
+    margin: -4% 0% 0% 0%;
     float: left;
 }
-.about-details {
-    width: 47%;
-    margin-left: 50%;
-    padding: 0px 30px 70px 0;
-    color: #fff;
-    text-align: justify;
-}
-
 .about-details h4 {
-   padding: 0px 0 30px;
-   font-size: 32px;
-   font-weight: normal;
-   padding-left: 15px;
+    padding: 0px 0 30px;
+    font-size: 32px;
+    font-weight: normal;
+    padding-left: 15px;
 }
 .about-details p {
     line-height: 24px;
     padding-left: 15px;
-    opacity: 0.8;
 }
-.about-details div.resume-link {
+.about-details > .resume-link {
     padding-top: 30px;
     width: 99px;
     margin-left: 14px;
+    float: left;
+    text-decoration: none;
+    color: #fff;
 }
 .bottom-about-details {
-    background: #fff;
-    height: 60vh;
     float: left;
-}
-
-#get-touch{
-    margin-top: 20vh;
-    opacity: 0.4;
+    color: #555656;
 }
 .about-details-2 {
     color: #555656;
-    padding-top: 0px !important;
-    margin-top: 100px;
+    padding-left: 50%;
+    float: left;
 }
+/*END ABOUT SECTION*/
 
-/* contact */
-.contact-inner {
-    display: flex;
-    flex-direction: column;
+/*BEGAN FOOTER SOCIAL LINKS*/
+.footer-line{
+    border-bottom: 7px solid #ff1a1a;
+    margin: 20px 0px;
+    opacity: .8;
 }
-.contact-inner header nav a {
-    color: #555656;
+.footer-links{
+    padding: 0px 8%;
+    margin: 4% 0% -2.3%;
+    float: left;
 }
-.contact .round-shape-inner {
-    display: inline-block;
-    vertical-align: middle;
+.img_center {
+    margin-left: auto;
+    margin-right: auto;
 }
-.social-icons {
-    display: flex;
-    flex-grow: 1;
-    align-items: flex-end;
-    margin-top: 0px;
-    z-index: 99;
-}
-.social-icons ul {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 0px;
+#social-icons{
+    float: left;
     width: 100%;
-    margin: 0px 0px -34px 0px;
+    margin-bottom: 3%;
 }
-.social-icons ul li {
-    display: inline-block;
-}
-.social-icons ul li a i {
-    color: #555656;
-    font-size: 50px;
-    background: #fff;
-}
+/*END FOOTER SOCIAL LINKS*/
 
-#get-touch-section{margin-top: 20vh;}
-#about-section{margin-top: 20vh;}
 
 @media (max-width: 1299px) {
    .works-details {
        flex-direction: column;
-   } 
+   }
    .works-details .section-title {
        padding-top: 0;
    }
 }
 @media (max-width: 1024px) {
-    .works-details .list-inner {
-        flex-direction: column;
-    }
-    .list-inner-left img {
-        max-width: 100%;
-    }
-    .list-inner-right {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    .round-shape-inner {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #ff1a1a;
-        margin: 12px 0px;
-    }
-    .about-details {
-        width: 46%;
-    }
 
-    .work-title {
-        font-size: 44px !important;
-    }
  }
 @media (max-width: 420px) {
-    #get-touch-section{margin-top: 9vh;}
-    #about-section{margin-top: 0vh;}
-
      * {
          font-size: 12px;
      }
-
-    .vertical-line {
-        margin-right: 4.3em;
-    }
-
-    #first-line{
-        margin-left: 0.5em !important;
-    }
-
-    #last-line{
-        margin-right: 0.5em !important;
-    }
-
-    .name-red-line {
-        width: 90px;
-        height: 0px;
-        border-bottom: 7px solid #ff1a1a;
-        margin: -6px -4px 7px;
-        opacity: .7;
-    }
-
-    .active-nav > .nav-red-line{
-        width: auto;
-        height: 6px;
-        border-bottom: 7px solid #ff1a1a;
-        margin: -13px -8px 7px;
-        opacity: .7;
-        position: relative;
-    }
-
-    .work-title {
-        position: inherit;
-        margin-left: -4vh;
-        padding-top: 0px;
-    }
-
-     .home-inner, .works-inner, .contact-inner {
-        padding: 0 17px;
-    }
     .header {
-        padding: 70px 0 0 0;
+        padding: 3% 3%;
     }
+
     .header nav ul li {
         padding-left: 20px;
     }
+
     .header nav a {
         font-size: 10px;
     }
-    .header .logo img {
-        max-width: 84px;
-        /*background: url(Final Personal Branding Logo - grey ombre.png);*/
-        opacity: 0.8;
+
+    .header nav a:hover {
+        font-size: 10px;
     }
-    .header .logo {
-        padding: 20px 0;
-    }
+
     .greetings, .section-title {
         font-size: 40px;
-        left: -23px;
-        padding-bottom: 25px;
-    }
-
-     .resume-red-line{
-         width: 17px;
-         height: 68px;
-         border-bottom: 5px solid #000000;
-         position: absolute;
-         margin: -21px 93px;
-     }
-
-    .works-details {
-        padding-top: 30px;
-    }
-    .list-details h3 {
-        font-size: 28px;
-        margin-left: 6vh;
-    }
-
-    .list-details p{
-        margin-left: 6vh;
-    }
-    .list-inner-right {
-        padding-top: 20px;
-    }
-    .short-about-me {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-bottom: 70px;
-    }
-    .round-shape-inner {
-        width: 10px;
-        height: 10px;
-    }
-    .about-inner header {
-        padding: 20px 17px;
-    }
-    .about .section-title {
-        margin-bottom: -330px;
-        left: -8px;
-        
-    }
-    .about-details {
-        padding: 0px 17px 40px 0;
-        width: 45%;
-    }
-
-    .bottom-about-details {
-        height: 43vh;
-    }
-
-    #contact {
-        min-height: 40vh !important;
-    }
-
-    .contact-inner {
-        min-height: 40vh !important;
-    }
-
-    .about-details-2 {
-        padding: 0px 17px 21px 0 !important;
-    }
-
-    .about-details h4 {
-        font-size: 12px;
-        padding: 10px  0;
-        padding-left: 7px;
-    }
-    .about-details p {
-        line-height: 16px;
-        padding-left: 7px;
-    }
-    .social-icons ul li a i {
-        font-size: 22px;
+        left: -2.5%;
+        padding-bottom: 0px;
     }
  }
 @media (min-width: 200px) and (max-width: 421px) {
-
     .short-about-me p {
         line-height: 16px;
         font-size: 10px;
@@ -517,248 +337,133 @@ li {
         line-height: 16px;
         font-size: 10px;
     }
-
-    .resume-red-line{
-        margin: -26px 122px !important;
+    .short-about-me {
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 7%;
+        padding-bottom: 6%;
     }
-
-    #get-touch-section{margin-top: 9vh;}
-    #about-section{margin-top: 0vh;}
-}
-
- /* resume page */
- .resume {
-     max-width: 1440px;
-     margin: 0 auto;
- }
- .resume-top {
-     padding: 0 30px;
- }
- .resume-top .header nav a {
-     color: #555656;
- }
- .resume-title {
-     display: flex;
-     justify-content: space-between;
-     border-bottom: 1px solid #FF1A1A;
- }
- .resume-title .section-title {
-     padding-top: 40px;
- }
- .resume-title .resume-heading {
-     padding-top: 80px;
-     font-size: 48px;
-     font-family: "‘Open Sans’";
- }
- .resume-title .resume-heading h3 {
-     text-align: right;
-     font-weight: 800;
-    font-size: 48px;
-    margin-bottom: 30px;
- }
- .resume-title .resume-heading h3:last-child {
-     margin-bottom: 0;
-     padding-right: 10px;
- }
-
-.footer-line{
-    border-bottom: 7px solid #ff1a1a;
-    margin: 0px 0px 0px 0px;
-    opacity: .8;
-    padding-top: 6em;
-}
-
-.link-text {
-    margin: 0px 1px -25px 15px;
-    display: ruby-text;
-}
-
- .resume-contacts ul {
-     display: flex;
-     justify-content: space-around;
- }
- .resume-contacts ul li {
-     border-right: 1px solid #FF1A1A;
-     flex-grow:1;
-     text-align: center;
- }
- .resume-contacts ul li:first-child {
-    border-left: 1px solid #FF1A1A;
- }
- .resume-contacts ul li a {
-     color: #555656;
-     display: inline-block;
-     padding-top: 5px;
- }
- .resume-contacts ul li a:hover {
-     border-bottom: none;
-     color: #FF1A1A;
-     transition: all 0.1s ease;
-     transition-delay: 0.1s;
-     animation: none;
-     transition-duration: 0.1s;
-     transition-timing-function: steps(1, end)
- }
- .resume-contacts ul li a i {
-     font-size: 25px;
-     vertical-align: midbottomdle;
- }
-
- .short-description {
-     padding: 45px 30px;
- }
- .short-description p {
-     width: 66.6666%;
-     margin: 0 auto;
-     text-align: justify;
- }
- .resume-bottom {
-     padding: 0 30px;
-     padding-bottom: 50px;
- }
- .resume-bottom-first, .resume-bottom-second {
-     display: flex;
-     padding-bottom: 35px;
- }
- .skills {
-     flex-basis: 32%;
-     display: flex;
-     padding-left: 10%;
- }
- .experience {
-    flex-basis: 68%;
-    display: flex;
- }
- .resume-bottom .round-shape-inner {
-     margin-right: 25px;
- }
- .resume-bottom h3 {
-    font-weight: 800;
-    font-size: 48px;
-    margin-top: -8px;
- }
-
- .resume-bottom h5 {
-    font-weight: 800;
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 5px;
- }
-
- .resume p {
-     line-height: 24px;
- }
- .resume p.more-experience {
-     padding-top: 20px;
- }
- .resume p.more-experience a {
-    color: #555656;
-    font-weight: bold;
-}
-
-.resume .padding-top {
-    padding-top: 20px;
-}
-
-@media (max-width: 1023px) {
-    .resume-title .section-title {
-        font-size: 88px;
-    }
-    .resume-title .resume-heading h3 {
-        font-size: 35px;
-    }
-    .short-description p {
+    .work-title{
+        font-size: 38px;
+        font-weight: 400;
+        left: -19px;
         width: 100%;
     }
-    .skills {
-        padding-left: 0;
+    .works-lists{
+        width: 100%;
     }
-    .resume-bottom h3 {
-        font-size: 35px;
+    .list-inner-right {
+        padding-top: .2em;
+        width: 100%;
     }
-
-    .resume-red-line{
-        width: 33px;
-        height: 63px;
-        border-bottom: 10px solid #ff1a1a;
-        position: absolute;
-        margin: -3px 243px;
+    .list-inner-left{
+        width: 100%;
     }
-}
-
-@media (max-width: 767px) {
-    .resume-top {
-        padding: 0 17px;
+    .round-shape-inner {
+        float: right;
     }
-    .resume-title .section-title {
-        font-size: 36px;
+    .list-details h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        margin-top: -8px;
+        color: #555656;
+        line-height: 16px;
     }
-
-    .resume-red-line{
-        width: 17px;
-        height: 68px;
-        border-bottom: 5px solid #ff1a1a;
-        position: absolute;
-        margin: -21px 7.3ex;
+    .list-details p{
+        line-height: 16px;
+    }
+    .round-shape-inner{
+        margin: 2% 4% 20% 0%;
+    }
+    .list-details{
+        margin: 3%;
     }
 
-    .resume-title .resume-heading {
-        padding-top: 60px;
+    .about-title {
+        font-size: 45px;
+        font-weight: 400;
+        left: -20px;
+        float: left;
+        margin-top: 25%;
     }
-    .resume-title .resume-heading h3 {
+    .about-details h4 {
+        padding: 15% 3% 14%;
         font-size: 12px;
+        font-weight: 400;
+        line-height: 0px;
     }
-    .resume-contacts ul li:last-child {
-        display: none;
+    .about-details > .round-shape-inner {
+        margin: 21% 0% 0% 0%;
     }
-    .resume-contacts ul li.instagram {
-        display: none;
+    .about-details > .resume-link {
+        width: 67px;
     }
-    .resume-contacts ul li a {
+    .about-details p {
         font-size: 10px;
+        line-height: 16px;
     }
-    .resume-contacts ul li a i {
-        display: none;
+    .active-nav > .nav-red-line {
+        width: auto;
+        height: 0px;
+        border-bottom: 9px solid #ff1a1a;
+        margin: -7px -5px 0px;
     }
-    .short-description {
-        padding: 35px 15px;
+
+    #about-2{
+        padding: 0% 3% 5%;
     }
-    .resume-bottom {
-        padding: 0 15px;
+    .about-details > .round-shape-inner {
+        margin: -4% 0% 0% 0%;
     }
-    .resume-bottom-first, .resume-bottom-second {
-        flex-direction: column;
+    #get-touch{
+        font-size: 45px;
     }
-    .resume-bottom h3 {
-        font-size: 18px;
-        margin-top:-3px;
+    .case-title {
+        margin-top: 8%;
     }
-    .resume-bottom h5 {
-        font-size: 12px;
+
+    .footer-links {
+        padding: 0% 3%;
+        margin: 0% 2.2% -6%;
     }
-    .resume-bottom .round-shape-inner {
-        margin: 5px;
+    .img_center{
+        width: 32px;
     }
-    .skills-details {
-        display: flex;
-        flex-wrap: wrap;
+
+    #social-icons{
+        margin-bottom: 10%;
     }
-    .single-topic {
-        flex-basis: 50%;
+
+}
+@media (max-width: 1023px) {
+}
+@media (min-width: 767px) and (max-width: 1299px){
+    .greetings {
+        font-size: 86px;
+        left: -22px;
     }
-    .skills-details .single-topic:nth-child(1) {
-        order: 1;
+    .work-title{
+        font-size: 75px;
+        left: -39px;
+        width: 100%;
     }
-    .skills-details .single-topic:nth-child(2) {
-        order: 3;
-        margin-top: -140px;
+    .works-lists{
+        width: 100%;
     }
-    .skills-details .single-topic:nth-child(3) {
-        order: 2;
+    .about-title{
+        font-size: 75px;
+        left: -38px;
+        margin-top: 10%;
     }
-    .experience {
-        margin-top: 30px;
+    #about-2 {
+        padding: 1% 3% 5%;
+
+    }
+    .about-details h4{
+        font-size: 26px;
+    }
+    .footer-links {
+        padding: 0px 6%;
+        margin: 4% 0% -4.3%;
     }
 }
-
-    

@@ -97,7 +97,7 @@ li {
     content: "\2022";
     color: #FF1A1A;
     font-weight: 900;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
 }
 .active-nav {
@@ -241,7 +241,7 @@ li {
 @media (max-width: 1299px) {
    .works-details {
        flex-direction: column;
-   } 
+   }
    .works-details .section-title {
        padding-top: 0;
    }
@@ -335,7 +335,7 @@ li {
     .about .section-title {
         margin-bottom: -330px;
         left: -8px;
-        
+
     }
     .about-details {
         padding: 40px 17px 40px 0;
