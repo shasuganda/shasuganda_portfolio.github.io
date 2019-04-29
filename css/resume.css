@@ -124,7 +124,7 @@ li {
 }
 
 .resume-red-line{
-    width: 49px;
+    width: 30px;
     height: 63px;
     border-bottom: 12px solid #ff1a1a;
     position: absolute;
@@ -269,8 +269,16 @@ li {
     }
  }
 @media (max-width: 420px) {
+    .img-trans{
+        display: none;
+    }
+
+    .resume-contacts ul li a span.link-text{
+        margin: 0px 2px -25px 4px;
+    }
+
      * {
-         font-size: 12px;
+         font-size: 10px;
      }
      a:hover {
         border-bottom: 5px solid #ff1a1a;
@@ -303,7 +311,7 @@ li {
     }
 
      .resume-red-line{
-         width: 17px;
+         width: 8px;
          height: 68px;
          border-bottom: 5px solid #000000;
          position: absolute;
@@ -357,6 +365,10 @@ li {
 @media (min-width: 200px) and (max-width: 421px) {
     .resume-red-line{
         margin: -26px 122px !important;
+    }
+
+    .resume-contacts ul li a{
+        text-align: center;
     }
 }
 
@@ -597,5 +609,3 @@ li {
         margin-top: 30px;
     }
 }
-
-    
