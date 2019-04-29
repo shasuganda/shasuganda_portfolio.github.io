@@ -26,7 +26,7 @@ a { text-decoration: none !important;}
     position: relative;
     left: -32px;
     font-family: 'Black Han Sans', "regular";
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 #top-menu{ background: #000000; }
@@ -183,6 +183,7 @@ a { text-decoration: none !important;}
     font-size: 138px;
     font-family: 'Black Han Sans', "regular";
     color: #555656;
+    opacity: 0.3;
     font-weight: 900;
     position: relative;
     left: -70px;
@@ -201,6 +202,7 @@ a { text-decoration: none !important;}
     font-size: 96px;
     font-family: 'Black Han Sans', "regular";
     color: #555656;
+    opacity: 0.3;
     font-weight: 900;
     position: relative;
     left: -0.25em;
@@ -231,6 +233,13 @@ a { text-decoration: none !important;}
     float: left;
     opacity: 0.8;
 }
+
+@media only screen and (min-width: 768px) {
+    .about-details {
+        width: 50%;
+    }
+}
+
 .about-details > .round-shape-inner {
     width: 14px;
     height: 14px;
