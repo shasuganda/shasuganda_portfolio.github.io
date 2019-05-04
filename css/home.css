@@ -68,10 +68,10 @@ a { text-decoration: none !important;}
   color: #555656;
   font-family: "Open Sans" , "regular";
 }
-#top-menu nav a, #about nav a{
+#home nav a, #about nav a{
   color: #FFFFFF;
 }
-#top-menu nav a:hover, #about nav a:hover {
+#home nav a:hover, #about nav a:hover {
   color: #FF1A1A;
 }
 .header nav a:hover {
@@ -432,6 +432,10 @@ a { text-decoration: none !important;}
     border-bottom: 9px solid #ff1a1a;
     margin: -7px -5px 0px;
   }
+    .active-nav:not(.resume-link) > .nav-red-line {
+      margin-top: -11px !important;
+    }
+  
   .lino {
     width: auto;
     height: 0px;
