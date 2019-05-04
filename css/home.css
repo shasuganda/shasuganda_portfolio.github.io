@@ -1207,7 +1207,6 @@ html #resume-page  {
     font-size: 10px !important;
   }
   #resume-page .img-trans{
-    display: none;
   }
 
   #resume-page .resume-contacts ul li a span.link-text{
@@ -1394,9 +1393,6 @@ html #resume-page  {
   color: #555656;
   display: inline-block;
   padding-top: 5px;
-}
-#resume-page .resume-contacts ul li a img {
-  display: none;
 }
 #resume-page .resume-contacts ul li a:hover {
   border-bottom: none;
