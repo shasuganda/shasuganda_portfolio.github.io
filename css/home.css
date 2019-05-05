@@ -68,10 +68,10 @@ a { text-decoration: none !important;}
   color: #555656;
   font-family: "Open Sans" , "regular";
 }
-#top-menu nav a, #about nav a{
+#home nav a, #about nav a{
   color: #FFFFFF;
 }
-#top-menu nav a:hover, #about nav a:hover {
+#home nav a:hover, #about nav a:hover {
   color: #FF1A1A;
 }
 .header nav a:hover {
@@ -240,7 +240,7 @@ a { text-decoration: none !important;}
 .about-details {
   width: 50%;
   color: #fff;
-  text-align: justify;
+  text-align: inherit;
   float: left;
   opacity: 0.8;
 }
@@ -432,6 +432,10 @@ a { text-decoration: none !important;}
     border-bottom: 9px solid #ff1a1a;
     margin: -7px -5px 0px;
   }
+    .active-nav:not(.resume-link) > .nav-red-line {
+      margin-top: -11px !important;
+    }
+
   .lino {
     width: auto;
     height: 0px;
@@ -506,7 +510,7 @@ a { text-decoration: none !important;}
   }
 
   #resume-page .resume-title .resume-red-line {
-    margin: -20px 351px;
+    margin: -20px 248px;
   }
 }
 
@@ -719,6 +723,7 @@ min-height: 100vh;
   padding: 0px !important;
 }
 #case-study-page .footer-line{
+  width: 100%;
   border-bottom: 7px solid #ff1a1a;
   margin: 20px 0px;
   opacity: .8;
@@ -1202,12 +1207,14 @@ html #resume-page  {
   #resume-page {
     font-size: 10px !important;
   }
-  #resume-page .img-trans{
-    display: none;
+  #resume-page .img-trans {
+    width: 10px !important;
+    vertical-align: middle;
   }
 
   #resume-page .resume-contacts ul li a span.link-text{
-    margin: 0px 2px -25px 4px;
+    /*margin: 0px 2px -25px 4px;*/
+    margin: unset !important;
   }
 
 
@@ -1391,9 +1398,6 @@ html #resume-page  {
   display: inline-block;
   padding-top: 5px;
 }
-#resume-page .resume-contacts ul li a img {
-  display: none;
-}
 #resume-page .resume-contacts ul li a:hover {
   border-bottom: none;
   color: #FF1A1A;
@@ -1424,9 +1428,6 @@ html #resume-page  {
   flex-basis: 40%;
   display: flex;
   padding-left: 10%;
-}
-#resume-page .skills .skills-inner {
-  min-width: 100%;
 }
 
 #resume-page .experience {
@@ -1494,9 +1495,12 @@ html #resume-page  {
   }
 
   #resume-page .resume-bottom-second .skills {
+    //min-width: 100%;
+  }
+  #resume-page .resume-bottom-second .skills > .single-topic {
     min-width: 100%;
   }
-  #resume-page .resume-bottom-second .skills .single-topic {
+  #resume-page .resume-bottom-second .skills > .skills-inner {
     min-width: 100%;
   }
 
