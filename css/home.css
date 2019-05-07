@@ -64,7 +64,7 @@ a { text-decoration: none !important;}
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 16px;
+  line-height: 24px;
   color: #555656;
   font-family: "Open Sans" , "regular";
 }
@@ -507,10 +507,6 @@ a { text-decoration: none !important;}
   .footer-links {
     padding: 0px 6%;
     margin: 4% 0% -4.3%;
-  }
-
-  #resume-page .resume-title .resume-red-line {
-    margin: -20px 248px;
   }
 }
 
@@ -1043,7 +1039,7 @@ html #resume-page  {
   height: 63px;
   border-bottom: 12px solid #ff1a1a;
   position: absolute;
-  margin: -5px 518px;
+  margin: -20px 335px;
 }
 
 #resume-page .works-lists {
@@ -1202,6 +1198,14 @@ html #resume-page  {
   #resume-page .resume-contacts ul li:last-child {
     display: none;
   }
+.about-details h4 {
+    padding: 5px 0 30px;
+    padding-left: 0;
+}
+.about-details p {
+    padding-left: 0;
+}
+
 }
 @media (max-width: 420px) {
   #resume-page {
@@ -1300,24 +1304,6 @@ html #resume-page  {
     font-size: 22px;
   }
 }
-@media (min-width: 200px) and (max-width: 421px) {
-  .footer-links {
-    margin: 0 !important;
-    padding: 0 !important;
-    margin-left: calc(20% - 40px) !important;
-    margin-bottom: -20px !important;
-  }
-
-  #resume-page .resume-red-line{
-    margin: -29px 119px !important;
-    width: 13px !important;
-  }
-
-  #resume-page .resume-contacts ul li a{
-    text-align: center;
-  }
-}
-
 /* resume page */
 #resume-page .resume {
   max-width: 1440px;
@@ -1465,6 +1451,12 @@ html #resume-page  {
 #resume-page .resume .padding-top {
   padding-top: 20px;
 }
+.bg-black .about-details p {
+    color: #fff;
+}
+
+
+
 
 @media (max-width: 1023px) {
   #resume-page .resume-title .section-title {
@@ -1508,12 +1500,8 @@ html #resume-page  {
     font-size: 35px;
   }
 
-  #resume-page .resume-red-line{
-    width: 33px;
-    height: 63px;
-    border-bottom: 10px solid #ff1a1a;
-    position: absolute;
-    margin: -25px 270px;
+  #resume-page .resume-title .resume-red-line {
+    margin: -20px 248px;
   }
 }
 
@@ -1605,4 +1593,52 @@ html #resume-page  {
   #resume-page .experience {
     margin-top: 30px;
   }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+#resume-page .resume-title .resume-heading {
+    margin-right: 10px;
+}
+#resume-page .resume-bottom h3 {
+    font-size: 35px;
+}
+#resume-page .round-shape-inner {
+    margin: 0;
+}
+}
+
+@media (min-width: 200px) and (max-width: 421px) {
+  .footer-links {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: calc(20% - 40px) !important;
+    margin-bottom: -20px !important;
+  }
+
+  #resume-page .resume-red-line{
+    margin: -29px 119px !important;
+    width: 13px !important;
+  }
+
+  #resume-page .resume-contacts ul li a{
+    text-align: center;
+  }
+/* #case-study-page #roles {
+    text-align: center !important;
+}
+#case-study-page #deliver {
+    text-align: center !important;
+}
+#case-study-page #tools {
+    text-align: center !important;
+}
+#case-study-page .col-xs-6 {
+    width: 100%;
+} */
+
+#resume-page .resume-contacts ul li a {
+    padding-top: 0;
+}
+#resume-page .img-trans {
+    display: none;
+}
 }
