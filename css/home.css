@@ -1659,3 +1659,120 @@ html #resume-page  {
     border-bottom: none;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+  /* scroll animations */
+  .work-whole {
+  position: relative;
+  }
+
+  .work-whole .work-after {
+  content: '';
+  background: black;
+  position: absolute;
+  background: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  }
+
+  .work-whole:after {
+  content: '';
+  display: block;
+  clear: both;
+  }
+
+
+
+  .work-title {
+  transition: all 1s;
+  }
+
+  .work-title.hide {
+  transform: translateY(-300px);
+  opacity: 0;
+  }
+
+
+
+
+
+
+
+  .about-whole {
+  position: relative;
+  }
+
+  .about-whole .about-after {
+  content: '';
+  background: black;
+  position: absolute;
+  background: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1001;
+  }
+
+  .about-whole:after {
+  content: '';
+  display: block;
+  clear: both;
+  }
+
+
+
+  .about-title {
+  transition: all 1s;
+  }
+
+  .about-title.hide {
+  transform: translateY(-300px);
+  opacity: 0;
+  }
+
+
+
+
+
+
+
+
+
+  .touch-whole {
+  position: relative;
+  }
+
+  .touch-whole .touch-after {
+  content: '';
+  background: black;
+  position: absolute;
+  background: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1001;
+  }
+
+  .touch-whole:after {
+  content: '';
+  display: block;
+  clear: both;
+  }
+
+
+}
