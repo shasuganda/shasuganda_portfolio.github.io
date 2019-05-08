@@ -10,7 +10,6 @@
 }
 html { scroll-behavior: smooth; }
 body {
-  /*font-family: 'Roboto', sans-serif;*/
   color: #555656;
 }
 main{ margin: 0 auto;  }
@@ -622,10 +621,6 @@ a { text-decoration: none !important;}
   opacity: 0.8;
 }
 
-
-/*#home, #about, #works, #contact {
-min-height: 100vh;
-}*/
 #case-study-page #home .home-inner, #case-study-page #about .about-inner, #case-study-page #works .works-inner, #case-study-page #contact .contact-inner {
   min-height: 100vh;
 }
@@ -885,30 +880,6 @@ min-height: 100vh;
 @media (max-width: 767px) {
 
 }
-
-/***** resume.css ******/
-
-/* load Open Sans Font from local */
-/* #resume-page {
-padding: 0;
-margin: 0;
-font-family: "Open Sans", "regular";
-}
-@import url(fonts/font.css);
-#resume-page p{
-font-size: 24px;
-}
-#resume-page .resume{
-font-size: 24px ;
-}
-
-#resume-page a {
-text-decoration: none;
-color: #fff;
-}
-#resume-page li {
-list-style: none;
-} */
 
 #resume-page  {
   padding: 0;
@@ -1630,18 +1601,6 @@ html #resume-page  {
   #resume-page .resume-contacts ul li a{
     text-align: center;
   }
-/* #case-study-page #roles {
-    text-align: center !important;
-}
-#case-study-page #deliver {
-    text-align: center !important;
-}
-#case-study-page #tools {
-    text-align: center !important;
-}
-#case-study-page .col-xs-6 {
-    width: 100%;
-} */
 
 #resume-page .resume-contacts ul li a {
     padding-top: 0;
@@ -1658,121 +1617,4 @@ html #resume-page  {
 #resume-page a:hover {
     border-bottom: none;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px) {
-
-  /* scroll animations */
-  .work-whole {
-  position: relative;
-  }
-
-  .work-whole .work-after {
-  content: '';
-  background: black;
-  position: absolute;
-  background: black;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  }
-
-  .work-whole:after {
-  content: '';
-  display: block;
-  clear: both;
-  }
-
-
-
-  .work-title {
-  transition: all 1s;
-  }
-
-  .work-title.hide {
-  transform: translateY(-300px);
-  opacity: 0;
-  }
-
-
-
-
-
-
-
-  .about-whole {
-  position: relative;
-  }
-
-  .about-whole .about-after {
-  content: '';
-  background: black;
-  position: absolute;
-  background: black;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1001;
-  }
-
-  .about-whole:after {
-  content: '';
-  display: block;
-  clear: both;
-  }
-
-
-
-  .about-title {
-  transition: all 1s;
-  }
-
-  .about-title.hide {
-  transform: translateY(-300px);
-  opacity: 0;
-  }
-
-
-
-
-
-
-
-
-
-  .touch-whole {
-  position: relative;
-  }
-
-  .touch-whole .touch-after {
-  content: '';
-  background: black;
-  position: absolute;
-  background: black;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1001;
-  }
-
-  .touch-whole:after {
-  content: '';
-  display: block;
-  clear: both;
-  }
-
-
 }
