@@ -886,29 +886,6 @@ min-height: 100vh;
 
 }
 
-/***** resume.css ******/
-
-/* load Open Sans Font from local */
-/* #resume-page {
-padding: 0;
-margin: 0;
-font-family: "Open Sans", "regular";
-}
-@import url(fonts/font.css);
-#resume-page p{
-font-size: 24px;
-}
-#resume-page .resume{
-font-size: 24px ;
-}
-
-#resume-page a {
-text-decoration: none;
-color: #fff;
-}
-#resume-page li {
-list-style: none;
-} */
 
 #resume-page  {
   padding: 0;
@@ -1630,18 +1607,7 @@ html #resume-page  {
   #resume-page .resume-contacts ul li a{
     text-align: center;
   }
-/* #case-study-page #roles {
-    text-align: center !important;
-}
-#case-study-page #deliver {
-    text-align: center !important;
-}
-#case-study-page #tools {
-    text-align: center !important;
-}
-#case-study-page .col-xs-6 {
-    width: 100%;
-} */
+
 
 #resume-page .resume-contacts ul li a {
     padding-top: 0;
