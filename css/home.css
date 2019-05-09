@@ -239,7 +239,7 @@ a { text-decoration: none !important;}
 .about-details {
   width: 50%;
   color: #fff;
-  text-align: inherit;
+  text-align: justify;
   float: left;
   opacity: 0.8;
 }
