@@ -456,6 +456,36 @@ a.btn-red {
 .item-qa {
     margin-bottom: 35px;
 }
+.results p b {
+    font-size: 36px;
+}
+.line-box table tr td {
+    text-align: left !important;
+}
+.item-feedback img.long3 {
+    width: 70%;
+}
+
+.overlay-image-holder {
+    position: relative;
+    padding-bottom: 220px;
+}
+
+.first-layer img {
+  width: 25%;
+  margin-right: 3%;
+}
+
+.second-layer img {
+  width: 25%;
+  margin-left: 3%;
+}
+
+.second-layer {
+    text-align: right;
+    position: absolute;
+    top: 140px;
+}
 /* .user-persona img {
   width: 100%;
 }
@@ -1038,14 +1068,6 @@ min-height: 100vh;
     padding-bottom: 25px;
   }
 }
-@media (max-width: 1023px) {
-
-}
-@media (max-width: 767px) {
-
-}
-
-
 #resume-page  {
   padding: 0;
   margin: 0;
@@ -1769,6 +1791,51 @@ html #resume-page  {
 .item-qa h4 {
     font-size: 12px;
 }
+.results p b {
+    font-size: 18px;
+}
+.item-feedback img.long3 {
+    width: 60%;
+    float: left;
+    margin-right: 10px;
+}
+#resume-page .link-text {
+    top: 0;
+}
+.first-layer {
+    overflow: hidden;
+}
+
+.overlay-image-holder {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.first-layer img {
+  width: 44%;
+  margin-right: 5%;
+}
+
+.second-layer img {
+  width: 50%;
+  margin-left: 0;
+}
+
+.second-layer {
+    text-align: center;
+    position: absolute;
+    top: 80px;
+}
+.single-column img {
+    margin-bottom: 15px;
+}
+.single-column {
+    width: 29%;
+    margin-right: 4%;
+}
+.wlstatistics p {
+    margin-top: 20px;
+}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 #resume-page .resume-title .resume-heading {
@@ -1806,11 +1873,15 @@ html #resume-page  {
 #resume-page .img-trans {
     display: none;
 }
+div#tools {
+    margin-top: -135px;
+}
 }
 
 .table-responsive .table thead>tr>th {
     text-align: center;
 }
+
 @media (min-width: 300px) and (max-width: 400px) {
 #resume-page a:hover {
     border-bottom: none;
