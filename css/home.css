@@ -128,6 +128,7 @@ a { text-decoration: none !important;}
   line-height: 24px;
   padding: 10px 0;
   font-size: 18px;
+  margin-left: 1em;
 }
 .short-about-me ul li:before {
   content: "\2022";
@@ -135,12 +136,23 @@ a { text-decoration: none !important;}
   font-weight: 900;
   display: inline-block;
   width: 1em;
+  margin-left: -1em;
 }
 /*END SHORT ABOUT*/
 
 /*BEGAN WORK LIST*/
 .works-lists{
   width: 66%;
+  margin-bottom: 20px;
+}
+.list-inner {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.list-inner-right .round-shape-inner {
+    position: absolute;
+    top: 58px;
+    left: -25px;
 }
 .list-inner{
   width: auto;
@@ -150,7 +162,7 @@ a { text-decoration: none !important;}
   height: 14px;
   border-radius: 50%;
   background: #ff1a1a;
-  margin: 4% 4% 62% 0%;
+  margin: 4% 4% 4% 0%;
   float: left;
 }
 .list-details h3 {
@@ -166,6 +178,7 @@ a { text-decoration: none !important;}
   padding-top: 3.2em;
   float: left;
   width: 40%;
+  position: relative;
 }
 .list-inner-left{
   float: left;
@@ -239,11 +252,20 @@ a { text-decoration: none !important;}
 .about-details {
   width: 50%;
   color: #fff;
-  text-align: justify;
+  text-align: left;
   float: left;
-  opacity: 0.8;
 }
-
+.about-details p, .about-details h4 {
+    opacity: 0.8;
+}
+.prototype-box-2 {
+    padding: 25px 40px;
+    background: #E5E5E5;
+    height: 380px;
+}
+img.last-img {
+    height: 97px;
+}
 @media only screen and (min-width: 768px) {
   .about-details {
     width: 50%;
@@ -255,8 +277,8 @@ a { text-decoration: none !important;}
   height: 14px;
   border-radius: 50%;
   background: #ff1a1a;
-  margin: -4% 0% 0% 0%;
   float: left;
+  margin-top: 11px;
 }
 .about-details h4 {
   padding: 0px 0 30px;
@@ -266,12 +288,12 @@ a { text-decoration: none !important;}
 }
 .about-details p {
   line-height: 24px;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 .about-details > .resume-link {
-  padding-top: 30px;
+  padding-top: 10px;
   width: 99px;
-  margin-left: 14px;
+  margin-left: 40px;
   float: left;
   text-decoration: none;
   color: #fff;
@@ -289,12 +311,11 @@ a { text-decoration: none !important;}
 
 /*BEGAN FOOTER SOCIAL LINKS*/
 .footer-line{
-  border-bottom: 7px solid #ff1a1a;
   margin: 20px 0px;
-  opacity: .8;
+  position: relative;
 }
 .footer-links{
-  padding: 0px 8%;
+  padding: 0px 4.3%;
   margin: 4% 0% -2.3%;
   float: left;
 }
@@ -307,6 +328,141 @@ a { text-decoration: none !important;}
   width: 100%;
   margin-bottom: 3%;
 }
+.wireframe-box {
+    background: #e5e5e5e5;
+    padding: 30px 35px;
+    margin-bottom: 25px;
+}
+
+.wireframe-box ul li {
+    list-style: disc !important;
+}
+
+.wireframe-box p {
+    font-weight: 700;
+}
+
+a.btn-red {
+    background: #F23D2E;
+    color: #fff;
+    border-radius: 50px;
+    padding: 7px 35px;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 16px;
+}
+.about-details p {
+    margin-bottom: 20px;
+}
+.single-image {
+    float: left;
+    width: 31.33%;
+    padding-top: 20px;
+}
+
+.single-image.mid {
+    margin: 0 3%;
+}
+
+.single-image img {
+    max-width: 100%;
+}
+#social-icons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+#social-icons ul li {
+    display: inline-block;
+    padding: 0px 4%;
+}
+
+#social-icons:before {
+    position: absolute;
+    top: 24px;
+    content: "";
+    background: #ff1a1a;
+    height: 7px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.section-title span.small {
+    font-size: 30px;
+    position: absolute;
+    right: 75px;
+    bottom: 10px;
+}
+#case-study-page #case-study.section-title {
+    font-size: 200px;
+}
+#case-study-page.case-study-page-2 #case-study.section-title {
+    font-size: 150px;
+}
+.case-study-page-2 .section-title span.small {
+    font-size: 30px;
+    position: absolute;
+    right: 75px;
+    bottom: 50px;
+}
+.prototype-box-3 {
+    padding: 25px 40px;
+    background: #E5E5E5;
+}
+.prototype-box-3 a {
+    word-break: break-word;
+}
+.sub-para p {
+    margin-bottom: 25px;
+}
+#case-study-page .full-image-block .img-border {
+    border: 1px solid #555656;
+}
+.single-column {
+    width: 18%;
+    float: left;
+    margin-right: 2%;
+}
+
+.five-col-images {
+    overflow: hidden;
+}
+.full-width-img {
+  width: 100%;
+}
+.img-border1 {
+  border: 1px solid #555656;
+}
+.wlstatistics p {
+  margin-top: 90px;
+}
+.logo-4-text h3 i {
+    color: #568298;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.logo-4-text h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.logo-4-text h3 span {
+    font-size: 16px;
+}
+.item-qa {
+    margin-bottom: 35px;
+}
+/* .user-persona img {
+  width: 100%;
+}
+.user-flows img {
+  width: 100%;
+} */
+
 /*END FOOTER SOCIAL LINKS*/
 
 
@@ -317,9 +473,6 @@ a { text-decoration: none !important;}
   .works-details .section-title {
     padding-top: 0;
   }
-}
-@media (max-width: 1024px) {
-
 }
 @media (max-width: 420px) {
   #main-page {
@@ -383,7 +536,7 @@ a { text-decoration: none !important;}
     width: 100%;
   }
   .round-shape-inner {
-    float: right;
+    float: left;
   }
   .list-details h3 {
     font-size: 28px;
@@ -396,10 +549,11 @@ a { text-decoration: none !important;}
     line-height: 16px;
   }
   .round-shape-inner{
-    margin: 2% 4% 20% 0%;
+    margin: 2% -2% 0% 0%;
   }
   .list-details{
     margin: 3%;
+    text-align: center;
   }
 
   .about-title {
@@ -417,10 +571,16 @@ a { text-decoration: none !important;}
   }
   .about-details > .round-shape-inner {
     margin: 21% 0% 0% 0%;
+    /* position: relative; */
+    /* left: -15px; */
   }
   .about-details > .resume-link {
     width: 67px;
   }
+
+.about-details > .resume-link {
+    margin-left: 8px;
+}  
   .about-details p {
     font-size: 10px;
     line-height: 16px;
@@ -448,7 +608,9 @@ a { text-decoration: none !important;}
     padding: 8% 3% 5%;
   }
   .about-details > .round-shape-inner {
-    margin: -4% 0% 0% 0%;
+    margin: 7% -8% 0% 0%;
+    position: relative;
+    left: -20px;
   }
   #get-touch{
     font-size: 45px;
@@ -510,10 +672,6 @@ a { text-decoration: none !important;}
 }
 
 /***** project1.css ******/
-
-/* load Open Sans Font from local */
-@import url(fonts/font.css);
-
 #case-study-page {
   font-family: 'Roboto', 'regular';
   color: #555656;
@@ -649,7 +807,7 @@ min-height: 100vh;
 
 #case-study-page .dot ul li{
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
   font-size: 18px;
 }
 #case-study-page .prototype-box .service-box-heading {
@@ -689,9 +847,10 @@ min-height: 100vh;
 #case-study-page .section-sub-heading{
   font-size: 2em;
   margin-bottom: 1em;
-  float: left;
+  float: none;
+  margin-top: 0;
+  display: block;
 }
-
 #case-study-page .section-content{
   font-size: 18px;
   text-align: justify;
@@ -733,7 +892,7 @@ min-height: 100vh;
   margin-right: auto;
 }
 #case-study-page .img-border{
-  border: 3px solid #555656;
+  border: 0.5px solid #555656;
 }
 
 /*BEGAN GENERIC CSS*/
@@ -751,6 +910,7 @@ min-height: 100vh;
 #case-study-page .margin-right-10 { margin-right: 10px !important; }
 #case-study-page .margin-right-20 { margin-right: 20px !important; }
 #case-study-page .margin-left-10 { margin-left: 10px !important; }
+#case-study-page .margin-left-20 { margin-left: 20px !important; }
 
 /*END GENERIC CSS*/
 
@@ -846,7 +1006,6 @@ min-height: 100vh;
   #case-study-page .section-sub-heading{
     font-size: 1.5em;
     margin-bottom: 1em;
-    float: left;
   }
 
   #case-study-page .home-inner, #case-study-page .works-inner, #case-study-page .contact-inner {
@@ -1005,7 +1164,7 @@ html #resume-page  {
   color: #555656;
   font-weight: 900;
   position: relative;
-  left: -69px;
+  left: -58px;
   /*padding-top: 140px;*/
   flex-basis: 30%;
 }
@@ -1015,7 +1174,7 @@ html #resume-page  {
   height: 63px;
   border-bottom: 12px solid #ff1a1a;
   position: absolute;
-  margin: -20px 335px;
+  margin: -20px 345px;
 }
 
 #resume-page .works-lists {
@@ -1321,7 +1480,7 @@ html #resume-page  {
   padding-top: 80px;
   margin-left: -100px;
   font-size: 42px;
-  font-family: "â€˜Open Sansâ€™";
+  font-family: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œOpen SansÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢";
 }
 #resume-page .resume-title .resume-heading h3 {
   text-align: right;
@@ -1335,7 +1494,8 @@ html #resume-page  {
 
 #resume-page .link-text {
   margin: 0px 1px -25px 15px;
-  display: ruby-text;
+  position: relative;
+  top: -7px;
 }
 #resume-page .resume-contacts ul li a span{
   font-size: 18px ;
@@ -1358,7 +1518,7 @@ html #resume-page  {
 #resume-page .resume-contacts ul li a {
   color: #555656;
   display: inline-block;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 #resume-page .resume-contacts ul li a:hover {
   border-bottom: none;
@@ -1578,6 +1738,37 @@ html #resume-page  {
 .about-details p {
     padding-left: 8px;
 }
+#social-icons:before {
+    position: absolute;
+    top: 15px;
+    content: "";
+    background: #ff1a1a;
+    height: 7px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+#case-study-page #case-study.section-title {
+    font-size: 84px;
+}
+#case-study-page.case-study-page-2 #case-study.section-title {
+    font-size: 44px;
+}
+#case-study-page .round-button {
+    padding: 10px 16px;
+}
+.case-study-page-2 .section-title span.small {
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+#case-study-page .moff .margin-top-50 {
+  margin-top: 0 !important;
+}
+.item-qa h4 {
+    font-size: 12px;
+}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 #resume-page .resume-title .resume-heading {
@@ -1625,3 +1816,4 @@ html #resume-page  {
     border-bottom: none;
 }
 }
+
