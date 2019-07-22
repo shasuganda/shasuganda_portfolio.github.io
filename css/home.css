@@ -17,25 +17,27 @@ main{ margin: 0 auto;  }
 .inner-padding{ padding: 0% 3%; }
 a { text-decoration: none !important;}
 .bg-black{
-  background: #000000;
+  background: #000;
   color: #fff;
 }
 .greetings {
   font-size: 138px;
-  color: #555656;
+  color: #231F20;
   font-weight: 900;
   position: relative;
   left: -32px;
   font-family: 'Black Han Sans', "regular";
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 #home{ background: #000000; }
 #about{ background: #000000; }
-#about-section{ background: #000000; float: left; padding: 8% 3% 8%; }
-#about-2{ float: left; padding: 8% 3% 5%; }
+#about-section{background: #000000;}
+#about-2{
+    padding: 80px 0;
+}
 #logo{ opacity: 0.8; }
-#work{padding: 0% 3%; float: left;}
+#work{padding: 0% 3%;}
 #get-touch{
   opacity: 0.4;
   float: left;
@@ -110,24 +112,24 @@ a { text-decoration: none !important;}
 
 /*BEGAN SHORT ABOUT*/
 .short-about-me {
-  width: 52%;
-  margin-left: 33.3333%;
-  margin-right: 16.6666%;
-  padding-bottom: 70px;
+  padding-bottom: 95px;
   opacity: 0.8;
 }
 .short-about-me p {
-  line-height: 24px;
-  font-size: 18px;
+  line-height: 150%;
+  font-size: 25px !important;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
 }
+.short-about-me ul {
+    padding-right: 90px;
+}
 .short-about-me ul li {
   list-style: none;
-  line-height: 24px;
+  line-height: 150%;
   padding: 10px 0;
-  font-size: 18px;
+  font-size: 23px;
   margin-left: 1em;
 }
 .short-about-me ul li:before {
@@ -150,19 +152,23 @@ a { text-decoration: none !important;}
     overflow: hidden;
 }
 .list-inner-right .round-shape-inner {
-    position: absolute;
-    top: 58px;
+    position: unset;
+    top: 7px;
     left: -25px;
+    display: none;
 }
 .list-inner{
   width: auto;
+}
+.about-details a.btn-red {
+    margin-left: 40px;
 }
 .round-shape-inner {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background: #ff1a1a;
-  margin: 4% 4% 4% 0%;
+  margin: 4% 26px 4% 0%;
   float: left;
 }
 .list-details h3 {
@@ -171,18 +177,16 @@ a { text-decoration: none !important;}
   margin-bottom: 20px;
   margin-top: -8px;
   color: #555656;
-  line-height: 56px;
+  line-height: 150%;
 }
-.list-details p {color: #555656; font-family: "Roboto", "regular"; }
-.list-inner-right {
-  padding-top: 3.2em;
-  float: left;
-  width: 40%;
-  position: relative;
+.list-details p {
+  color: #555656;
+  font-family: "Roboto", "regular";
+  font-size: 20px;
+  line-height: 150%;
 }
+.list-inner-right {position: relative;}
 .list-inner-left{
-  float: left;
-  width: 60%;
 }
 .list-inner-left img {
   max-width: 100%;
@@ -199,19 +203,16 @@ a { text-decoration: none !important;}
   left: -68px;
   width: 34%;
   opacity: 0.4;
-  float: left;
-  margin-top: 8%;
 }
 .about-title {
   font-size: 138px;
   font-family: 'Black Han Sans', "regular";
-  color: #555656;
-  opacity: 0.3;
+  color: #231F20;
   font-weight: 900;
   position: relative;
-  left: -70px;
+  left: -35px;
   width: 50%;
-  float: left;
+  opacity: 0.9;
 }
 /*END BIGGER TITLES*/
 
@@ -250,10 +251,10 @@ a { text-decoration: none !important;}
 
 /*BEGAN ABOUT SECTION*/
 .about-details {
-  width: 50%;
   color: #fff;
   text-align: left;
-  float: left;
+  padding-right: 145px;
+  padding-bottom: 100px;
 }
 .about-details p, .about-details h4 {
     opacity: 0.8;
@@ -268,7 +269,6 @@ img.last-img {
 }
 @media only screen and (min-width: 768px) {
   .about-details {
-    width: 50%;
   }
 }
 
@@ -287,8 +287,9 @@ img.last-img {
   padding-left: 15px;
 }
 .about-details p {
-  line-height: 24px;
+  line-height: 150%;
   padding-left: 40px;
+  font-size: 18px;
 }
 .about-details > .resume-link {
   padding-top: 10px;
@@ -304,8 +305,6 @@ img.last-img {
 }
 .about-details-2 {
   color: #555656;
-  padding-left: 50%;
-  float: left;
 }
 /*END ABOUT SECTION*/
 
@@ -354,18 +353,16 @@ a.btn-red {
 .about-details p {
     margin-bottom: 20px;
 }
-.single-image {
-    float: left;
-    width: 31.33%;
-    padding-top: 20px;
-}
-
 .single-image.mid {
     margin: 0 3%;
 }
 
 .single-image img {
     max-width: 100%;
+}
+.section-img {
+    padding-left: 40px;
+    margin-top: 30px;
 }
 #social-icons ul {
     margin: 0;
@@ -536,17 +533,13 @@ a.btn-red {
     font-size: 10px !important;
   }
   .short-about-me p {
-    line-height: 16px;
-    font-size: 10px;
+    font-size: 12px !important;
   }
   .short-about-me ul li {
-    line-height: 16px;
     font-size: 10px;
   }
   .short-about-me {
-    width: 92%;
-    margin-left: 4%;
-    margin-right: 7%;
+    width: 100%;
     padding-bottom: 6%;
   }
   .work-title{
@@ -573,7 +566,6 @@ a.btn-red {
     margin-bottom: 20px;
     margin-top: -8px;
     color: #555656;
-    line-height: 16px;
   }
   .list-details p{
     line-height: 16px;
@@ -589,9 +581,8 @@ a.btn-red {
   .about-title {
     font-size: 45px;
     font-weight: 400;
-    left: -20px;
-    float: left;
-    margin-top: 25%;
+    left: -10px;
+    padding-top: 20px;
   }
   .about-details h4 {
     padding: 15% 3% 14%;
@@ -610,7 +601,7 @@ a.btn-red {
 
 .about-details > .resume-link {
     margin-left: 8px;
-}  
+}
   .about-details p {
     font-size: 10px;
     line-height: 16px;
@@ -638,9 +629,10 @@ a.btn-red {
     padding: 8% 3% 5%;
   }
   .about-details > .round-shape-inner {
-    margin: 7% -8% 0% 0%;
+    margin: 0% 0% 0% 0%;
     position: relative;
-    left: -20px;
+    left: -12px;
+    top: 0;
   }
   #get-touch{
     font-size: 45px;
@@ -832,7 +824,7 @@ min-height: 100vh;
 
 #case-study-page .prototype-box ul li, p {
   color: #656565;
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 #case-study-page .dot ul li{
@@ -937,10 +929,25 @@ min-height: 100vh;
 #case-study-page .margin-bottom-30 { margin-bottom: 30px !important; }
 #case-study-page .margin-bottom-40 { margin-bottom: 40px !important; }
 
-#case-study-page .margin-right-10 { margin-right: 10px !important; }
-#case-study-page .margin-right-20 { margin-right: 20px !important; }
-#case-study-page .margin-left-10 { margin-left: 10px !important; }
-#case-study-page .margin-left-20 { margin-left: 20px !important; }
+.margin-right-10 { margin-right: 10px !important; }
+.margin-right-20 { margin-right: 20px !important; }
+.margin-left-10 { margin-left: 10px !important; }
+.margin-left-20 { margin-left: 20px !important; }
+.margin-top-10 { margin-top: 10px !important; }
+.margin-top-20 { margin-top: 20px !important; }
+.margin-top-50 { margin-top: 50px !important; }
+
+.margin-bottom-10 { margin-bottom: 10px !important; }
+.margin-bottom-15 { margin-bottom: 15px !important; }
+.margin-bottom-20 { margin-bottom: 20px !important;  }
+.margin-bottom-25 { margin-bottom: 25px !important; }
+.margin-bottom-30 { margin-bottom: 30px !important; }
+.margin-bottom-40 { margin-bottom: 40px !important; }
+
+.margin-right-10 { margin-right: 10px !important; }
+.margin-right-20 { margin-right: 20px !important; }
+.margin-left-10 { margin-left: 10px !important; }
+.margin-left-20 { margin-left: 20px !important; }
 
 /*END GENERIC CSS*/
 
@@ -1502,7 +1509,7 @@ html #resume-page  {
   padding-top: 80px;
   margin-left: -100px;
   font-size: 42px;
-  font-family: "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œOpen SansÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢";
+  font-family: "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œOpen SansÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢";
 }
 #resume-page .resume-title .resume-heading h3 {
   text-align: right;
@@ -1836,6 +1843,17 @@ html #resume-page  {
 .wlstatistics p {
     margin-top: 20px;
 }
+.about-details {
+    padding-right: 0;
+    padding-bottom: 80px;
+}
+.section-img {
+    padding-left: 0;
+    margin-top: 30px;
+}
+.about-details a.btn-red {
+    margin-left: 8px;
+}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 #resume-page .resume-title .resume-heading {
@@ -1887,4 +1905,3 @@ div#tools {
     border-bottom: none;
 }
 }
-
