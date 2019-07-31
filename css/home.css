@@ -628,6 +628,11 @@ a.btn-red {
   #about-2{
     padding: 8% 3% 5%;
   }
+
+  #about-section {
+padding-left: 3%;
+}
+
   .about-details > .round-shape-inner {
     margin: 0% 0% 0% 0%;
     position: relative;
@@ -1765,7 +1770,7 @@ html #resume-page  {
     margin-top: 15px;
 }
 .about-details p {
-    padding-left: 8px;
+    padding-left: 14px;
 }
 #social-icons:before {
     position: absolute;
@@ -1848,11 +1853,11 @@ html #resume-page  {
     padding-bottom: 80px;
 }
 .section-img {
-    padding-left: 0;
+    padding-left: 14;
     margin-top: 30px;
 }
 .about-details a.btn-red {
-    margin-left: 8px;
+    margin-left: 8px to 14px;
 }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
