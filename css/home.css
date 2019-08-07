@@ -1374,6 +1374,12 @@ html #resume-page  {
 .about-details p {
     padding-left: 8px;
 }
+.freelance {
+  float: middle;
+
+}
+
+}
 
 }
 @media (max-width: 420px) {
